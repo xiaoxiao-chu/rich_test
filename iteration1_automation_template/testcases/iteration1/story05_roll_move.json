@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "case_id": "ITER1-STORY05-001",
+  "case_name": "ROLL 读取预置骰子并移动指定步数",
+  "map_file": "map.json",
+  "preset": {
+    "users": ["A", "Q"],
+    "current_user": "A",
+    "phase": "COMMAND",
+    "game_status": "RUNNING",
+    "players": [
+      {
+        "id": "A",
+        "fund": 10000,
+        "credit": 0,
+        "position": 0,
+        "status": "NORMAL",
+        "remaining_rounds": 0,
+        "items": {
+          "BLOCK": 0,
+          "BOMB": 0,
+          "ROBOT": 0
+        },
+        "god_of_wealth_rounds": 0
+      },
+      {
+        "id": "Q",
+        "fund": 10000,
+        "credit": 0,
+        "position": 5,
+        "status": "NORMAL",
+        "remaining_rounds": 0,
+        "items": {
+          "BLOCK": 0,
+          "BOMB": 0,
+          "ROBOT": 0
+        },
+        "god_of_wealth_rounds": 0
+      }
+    ],
+    "properties": [],
+    "map_items": [],
+    "dice_sequence": [3]
+  },
+  "actions": [
+    {
+      "command": "ROLL",
+      "params": {}
+    }
+  ],
+  "expected": {
+    "players": [
+      {
+        "id": "A",
+        "position": 3
+      }
+    ]
+  }
+}
